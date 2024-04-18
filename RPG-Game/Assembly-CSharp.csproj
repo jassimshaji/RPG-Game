@@ -53,9 +53,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\ligh.cs" />
-     <Compile Include="Assets\Scripts\Mover.cs" />
+     <Compile Include="Assets\Scripts\Cinematics\CinematicsControlRemover.cs" />
+     <Compile Include="Assets\Scripts\Cinematics\TriggerCinematics.cs" />
+     <Compile Include="Assets\Scripts\Combat\CombatTarget.cs" />
+     <Compile Include="Assets\Scripts\Combat\Fighter.cs" />
+     <Compile Include="Assets\Scripts\Control\AIcontroller.cs" />
+     <Compile Include="Assets\Scripts\Control\Patrolroute.cs" />
+     <Compile Include="Assets\Scripts\Control\Playercontrol.cs" />
+     <Compile Include="Assets\Scripts\Core\ActionScheduler.cs" />
+     <Compile Include="Assets\Scripts\Core\FollowCamera.cs" />
+     <Compile Include="Assets\Scripts\Core\Health.cs" />
+     <Compile Include="Assets\Scripts\Core\IAction.cs" />
+     <Compile Include="Assets\Scripts\Movement\Mover.cs" />
+     <None Include="Assets\Asset Packs\Animations\README - Usage Rights for these assets 1.txt" />
      <None Include="Assets\Asset Packs\Synty - Polygon Student Sample\README - Usage Rights for these assets.txt" />
+     <None Include="Assets\Asset Packs\BOXOPHOBIC\Skybox Cubemap Extended\Shaders\Skybox Cubemap Extended.shader" />
+ <Reference Include="Cinemachine">
+ <HintPath>C:/Users/JARVIS/Desktop/MyGames/RPG-Game/RPG-Game/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/JARVIS/Desktop/MyGames/RPG-Game/RPG-Game/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
@@ -64,6 +79,9 @@
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
  <HintPath>C:/Users/JARVIS/Desktop/MyGames/RPG-Game/RPG-Game/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="com.unity.cinemachine.editor">
+ <HintPath>C:/Users/JARVIS/Desktop/MyGames/RPG-Game/RPG-Game/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>C:/Users/JARVIS/Desktop/MyGames/RPG-Game/RPG-Game/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
