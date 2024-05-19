@@ -1,11 +1,15 @@
 ﻿using UnityEngine;
 using UnityEngine.Playables;
+using RPG.Saving;
 
 namespace RPG.Cinematics
 {
-    public class TriggerCinematics : MonoBehaviour
+    public class TriggerCinematics : MonoBehaviour,ISaveable
     {
-        bool alreadyTriggered = false;
+        bool alreadyTriggered;
+
+
+
         private void OnTriggerEnter(Collider Player) {
             
             if(!alreadyTriggered && Player.gameObject.tag == "Player"){
@@ -13,6 +17,15 @@ namespace RPG.Cinematics
                 GetComponent<PlayableDirector>().Play();
                 
             }
+        }
+        public object CaptureState()
+        {
+            return alreadyTriggered;
+        }
+
+        public void RestoreState(object state)
+        {
+            alreadyTriggered = (bool) state;
         }
 
 

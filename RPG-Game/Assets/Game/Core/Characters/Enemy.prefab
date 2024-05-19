@@ -1804,7 +1804,7 @@ MonoBehaviour:
   patrolroute: {fileID: 0}
   Checkpointtolerance: 1
   Dweltime: 3
-  patrolspeedfraction: 0.2
+  patrolspeedfraction: 0.5
 --- !u!1 &7121707652701698647
 GameObject:
   m_ObjectHideFlags: 0
@@ -2194,12 +2194,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1147686164, guid: c6b7249322ed1c048abec79c0e30fd7b, type: 3}
       propertyPath: Damage
-      value: 0.5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3598958373512951203, guid: c6b7249322ed1c048abec79c0e30fd7b,
         type: 3}
       propertyPath: healthPoints
-      value: 5
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3007785619620226391, guid: c6b7249322ed1c048abec79c0e30fd7b,
         type: 3}

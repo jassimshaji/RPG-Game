@@ -15,6 +15,7 @@ namespace RPG.Control
         Fighter enemy;
         Health health;
         Vector3 guardPosition;
+        Vector3 guardRotation;
         Mover mover;
         Patrolroute route;
         ActionScheduler actionScheduler;
@@ -24,34 +25,39 @@ namespace RPG.Control
         [SerializeField] float Checkpointtolerance = 1f;
         [SerializeField] float Dweltime = 3f;
         [Range(0, 1)]
-        [SerializeField] float patrolspeedfraction = 0.2f;
+        [SerializeField] float patrolspeedfraction = 1f;
         int Currentcheckpointindex = 0;
 
         float TimeSinceLastSawPlayer = Mathf.Infinity;
         float TimeSinceLastDwel = Mathf.Infinity;
-        
+
+
         private void Start()
         {
             player = GameObject.FindGameObjectWithTag("Player");
             enemy = GetComponent<Fighter>();
             health = GetComponent<Health>();
             guardPosition = transform.position;
+            guardRotation = transform.eulerAngles;
             mover = GetComponent<Mover>();
             actionScheduler = GetComponent<ActionScheduler>();
-           
+
 
         }
 
 
         private void Update()
         {
+
             if (health.IsDead()) return;
 
             if (CanChase() && enemy.CanAttack(player))
             {
-                
+
                 AttackBehaviour();
             }
+
+
             //Suspicous
             else if (TimeSinceLastSawPlayer < SuspicousTime)
             {
@@ -65,50 +71,57 @@ namespace RPG.Control
             }
             UpdateTimers();
 
+
         }
+
+
+
 
         private void UpdateTimers()
         {
             TimeSinceLastSawPlayer += Time.deltaTime;
             TimeSinceLastDwel += Time.deltaTime;
+
         }
 
         private void PatrolBehaviour()
         {
             Vector3 Nextpathposition = guardPosition;
-            if(patrolroute != null)
+            if (patrolroute != null)
             {
-                if(AtCheckPoint())
+                if (AtCheckPoint())
                 {
-                    
-                        CyclePath();
+
+                    CyclePath();
                 }
                 Nextpathposition = GetCurrentRoute();
             }
-            if(TimeSinceLastDwel > Dweltime)
+            if (TimeSinceLastDwel > Dweltime)
             {
-            mover.StartMoveAction(Nextpathposition, patrolspeedfraction);
+                mover.StartMoveAction(Nextpathposition, patrolspeedfraction);
+
             }
+
         }
 
         private Vector3 GetCurrentRoute()
         {
             return patrolroute.GetRoutePoint(Currentcheckpointindex);
-            
+
         }
 
         private void CyclePath()
         {
             TimeSinceLastDwel = 0;
             Currentcheckpointindex = patrolroute.GetNextIndex(Currentcheckpointindex);
-            
+
         }
 
         private bool AtCheckPoint()
         {
             float DistanceToCheckPoint = Vector3.Distance(transform.position, GetCurrentRoute());
             return DistanceToCheckPoint < Checkpointtolerance;
-            
+
         }
 
         private void SuspiciousBehaviour()

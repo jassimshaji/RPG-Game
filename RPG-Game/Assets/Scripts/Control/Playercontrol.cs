@@ -18,7 +18,7 @@ namespace RPG.Control
             if(health.IsDead()) return;
             if (InteractWithCombat()) return;
             if (InteractWithMovement()) return;
-            print("Thers's nothing!");
+        
 
         }
 
