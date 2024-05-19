@@ -5457,7 +5457,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 546237361}
-  m_LocalRotation: {x: 0.118917845, y: -0.109238535, z: 0.013164326, w: 0.98678887}
+  m_LocalRotation: {x: 0.11891783, y: -0.1092385, z: 0.013164314, w: 0.98678887}
   m_LocalPosition: {x: -30.439999, y: 8.90247, z: 18.99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -14076,7 +14076,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 33980803, guid: 96a650eb850a95a4bbae907378f13e0f, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.93598455
+      value: 0.94166034
       objectReference: {fileID: 0}
     - target: {fileID: 435278798, guid: 96a650eb850a95a4bbae907378f13e0f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -20815,6 +20815,7 @@ GameObject:
   - component: {fileID: 2088699057}
   - component: {fileID: 2088699056}
   - component: {fileID: 2088699055}
+  - component: {fileID: 2088699058}
   m_Layer: 2
   m_Name: TownCinematics
   m_TagString: Untagged
@@ -20924,6 +20925,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 5, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2088699058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088699051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfb57d6370d28d841b01576125a49d58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2091398039
 PrefabInstance:
   m_ObjectHideFlags: 0
