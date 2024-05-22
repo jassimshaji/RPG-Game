@@ -66,6 +66,9 @@
      <Compile Include="Assets\Scripts\Core\IAction.cs" />
      <Compile Include="Assets\Scripts\Core\PersistantObjectSpawner.cs" />
      <Compile Include="Assets\Scripts\JSONSaving\IJSONSavable.cs" />
+     <Compile Include="Assets\Scripts\JSONSaving\IJSONSaveable.cs" />
+     <Compile Include="Assets\Scripts\JSONSaving\JSONSaveableEntity.cs" />
+     <Compile Include="Assets\Scripts\JSONSaving\JSONSavingSystem.cs" />
      <Compile Include="Assets\Scripts\Movement\Mover.cs" />
      <Compile Include="Assets\Scripts\Saving\ISaveable.cs" />
      <Compile Include="Assets\Scripts\Saving\SaveableEntity.cs" />
