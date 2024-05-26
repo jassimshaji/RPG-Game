@@ -127,10 +127,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 771
-  m_MinSize: {x: 913, y: 348}
-  m_MaxSize: {x: 22008, y: 10024}
+  m_MinSize: {x: 917, y: 348}
+  m_MaxSize: {x: 22012, y: 10024}
   vertical: 0
-  controlID: 62
+  controlID: 42
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -245,10 +245,10 @@ MonoBehaviour:
     y: 0
     width: 1025
     height: 771
-  m_MinSize: {x: 402, y: 348}
-  m_MaxSize: {x: 8002, y: 8048}
+  m_MinSize: {x: 406, y: 348}
+  m_MaxSize: {x: 8006, y: 8048}
   vertical: 1
-  controlID: 11
+  controlID: 76
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -270,10 +270,10 @@ MonoBehaviour:
     y: 0
     width: 1025
     height: 498
-  m_MinSize: {x: 402, y: 224}
-  m_MaxSize: {x: 8002, y: 4024}
+  m_MinSize: {x: 406, y: 224}
+  m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 12
+  controlID: 56
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -293,8 +293,8 @@ MonoBehaviour:
     y: 0
     width: 821
     height: 498
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 224}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 21}
@@ -525,20 +525,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts/Combat
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts/Combat
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\JARVIS\Desktop\MyGames\RPG-Game\RPG-Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 820d0000
-    m_LastClickedID: 3458
-    m_ExpandedIDs: 00000000700b0000de0b0000240c00002c0c00005e0c0000ce0c0000d60c0000980d0000560e0000a60e0000e40f0000fc0f0000c0370000c2370000c4370000c6370000c8370000
+    m_SelectedIDs: 2c100000
+    m_LastClickedID: 4140
+    m_ExpandedIDs: 00000000720b0000e00b0000260c0000300c0000620c0000d20c0000da0c00009e0d00005c0e0000ac0e0000ec0f000004100000c6370000c8370000ca370000cc370000ce370000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -566,7 +566,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000700b0000de0b0000240c00002c0c00005e0c0000ce0c0000d60c0000280d0000980d0000a60e0000e40f0000fc0f0000c0370000c2370000c4370000c6370000c8370000
+    m_ExpandedIDs: 00000000720b0000e00b0000260c0000300c0000620c0000d20c0000da0c00009e0d00005c0e0000ac0e0000ec0f000004100000c6370000c8370000ca370000cc370000ce370000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -685,9 +685,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 820d0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: a8beffff0eefffffd2fbffff64430100c8470100
+      m_ExpandedIDs: 0eefffffd2fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
