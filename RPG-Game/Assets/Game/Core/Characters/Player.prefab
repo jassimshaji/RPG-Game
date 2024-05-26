@@ -98,6 +98,20 @@ PrefabInstance:
       propertyPath: Damage
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 1147686164, guid: c6b7249322ed1c048abec79c0e30fd7b, type: 3}
+      propertyPath: handTransform
+      value: 
+      objectReference: {fileID: 8547327347462605292}
+    - target: {fileID: 1147686164, guid: c6b7249322ed1c048abec79c0e30fd7b, type: 3}
+      propertyPath: weaponPrefab
+      value: 
+      objectReference: {fileID: 5775186087681773658, guid: 3c9edf20836b99b4696e17f7b8b568d3,
+        type: 3}
+    - target: {fileID: 1147686164, guid: c6b7249322ed1c048abec79c0e30fd7b, type: 3}
+      propertyPath: weaponOverride
+      value: 
+      objectReference: {fileID: 22100000, guid: 9ae53da583878884995b5518738d07ea,
+        type: 2}
     - target: {fileID: 3598958373512951203, guid: c6b7249322ed1c048abec79c0e30fd7b,
         type: 3}
       propertyPath: healthPoints
