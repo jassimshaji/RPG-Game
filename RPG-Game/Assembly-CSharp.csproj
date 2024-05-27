@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\Combat\CombatTarget.cs" />
      <Compile Include="Assets\Scripts\Combat\Fighter.cs" />
      <Compile Include="Assets\Scripts\Combat\Weapon.cs" />
+     <Compile Include="Assets\Scripts\Combat\Weaponpickup.cs" />
      <Compile Include="Assets\Scripts\Control\AIcontroller.cs" />
      <Compile Include="Assets\Scripts\Control\Patrolroute.cs" />
      <Compile Include="Assets\Scripts\Control\Playercontrol.cs" />

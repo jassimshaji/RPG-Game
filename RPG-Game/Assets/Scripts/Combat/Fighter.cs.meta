@@ -5,7 +5,7 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - handTransform: {instanceID: 0}
-  - weapon: {instanceID: 0}
+  - defaultWeapon: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

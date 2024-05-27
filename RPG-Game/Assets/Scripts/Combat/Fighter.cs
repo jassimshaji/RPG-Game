@@ -13,25 +13,23 @@ namespace RPG.Combat
 
     {
 
-        [SerializeField] float WeaponRange = 2f;
-        [SerializeField] float TimeBetweenAttacks = 1f;
-        [SerializeField] float Damage = 5f;
         
+        [SerializeField] float TimeBetweenAttacks = 1f;
         [SerializeField] Transform handTransform = null;
-        [SerializeField] Weapon weapon = null;
+        [SerializeField] Weapon defaultWeapon = null;
         
         Health target;
         float TimeSinceLastAttack = Mathf.Infinity;
 
         Mover Move;
+
+        Weapon currentWeapon = null;
         private void Start()
         {
-            
+
             Move = GetComponent<Mover>();
-            if(weapon == null) return;
-            Animator animator = GetComponent<Animator>();
-            weapon.Spawn(handTransform, animator);
-            
+            EquipWeapon(defaultWeapon);
+
         }
 
 
@@ -69,6 +67,14 @@ namespace RPG.Combat
 
         }
 
+        public void EquipWeapon(Weapon weapon)
+        {
+            currentWeapon = weapon;
+            Animator animator = GetComponent<Animator>();
+            currentWeapon.Spawn(handTransform, animator);
+        }
+
+
         private void AttackBehaviour()
         {
             transform.LookAt(target.transform);
@@ -90,12 +96,12 @@ namespace RPG.Combat
         void Hit()
         {
             if (target == null) return;
-            target.TakeDamage(Damage);
+            target.TakeDamage(currentWeapon.GetDamage());
         }
 
         private bool GetInRange()
         {
-            return Vector3.Distance(transform.position, target.transform.position) < WeaponRange;
+            return Vector3.Distance(transform.position, target.transform.position) < currentWeapon.GetRange();
         }
 
 

@@ -6,7 +6,7 @@ namespace RPG.Cinematics
 {
     public class TriggerCinematics : MonoBehaviour,ISaveable
     {
-        bool alreadyTriggered;
+        public bool alreadyTriggered;
 
 
 
