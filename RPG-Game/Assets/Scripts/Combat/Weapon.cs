@@ -1,5 +1,5 @@
-﻿using System.Reflection;
-using JetBrains.Annotations;
+﻿
+using RPG.Core;
 using UnityEngine;
 
 namespace RPG.Combat
@@ -11,16 +11,32 @@ namespace RPG.Combat
         [SerializeField] AnimatorOverrideController animatorOverride = null;
         [SerializeField] float WeaponDamage = 5f;
         [SerializeField] float WeaponRange = 2f;
+        [SerializeField] bool isRightHand = true;
+        [SerializeField] Projectiles projectile = null;
 
-        public void Spawn(Transform handTransform, Animator animator){
+        public void Spawn(Transform righthand, Transform lefthand, Animator animator){
 
-            if(equippedPrefab != null){
-            Instantiate(equippedPrefab, handTransform);
+            if(equippedPrefab != null)
+            {
+                Transform handTransform = GetTransform(righthand, lefthand);
+                Instantiate(equippedPrefab, handTransform);
             }
 
-            if(animatorOverride != null){
+            if (animatorOverride != null){
             animator.runtimeAnimatorController = animatorOverride;
             }
+        }
+
+        public void SpawnProjectile(Transform righthand, Transform lefthand, Health target){
+            Projectiles spawnedProjectile = Instantiate(projectile, GetTransform(righthand, lefthand).position, Quaternion.identity);
+            spawnedProjectile.SetTarget(target);
+
+        }
+
+
+
+        public bool HasProjectile(){
+            return projectile != null;
         }
 
         public float GetDamage(){
@@ -29,6 +45,14 @@ namespace RPG.Combat
 
         public float GetRange(){
             return WeaponRange;
+        }
+
+        private Transform GetTransform(Transform righthand, Transform lefthand)
+        {
+            Transform handTransform;
+            if (isRightHand) handTransform = righthand;
+            else handTransform = lefthand;
+            return handTransform;
         }
 
     

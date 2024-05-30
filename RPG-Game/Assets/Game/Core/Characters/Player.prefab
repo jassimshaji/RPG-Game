@@ -121,6 +121,14 @@ PrefabInstance:
       propertyPath: defaultWeapon
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1147686164, guid: c6b7249322ed1c048abec79c0e30fd7b, type: 3}
+      propertyPath: leftHandTransform
+      value: 
+      objectReference: {fileID: 8547327347462547844}
+    - target: {fileID: 1147686164, guid: c6b7249322ed1c048abec79c0e30fd7b, type: 3}
+      propertyPath: rightHandTransform
+      value: 
+      objectReference: {fileID: 8547327347462605292}
     - target: {fileID: 3598958373512951203, guid: c6b7249322ed1c048abec79c0e30fd7b,
         type: 3}
       propertyPath: healthPoints
