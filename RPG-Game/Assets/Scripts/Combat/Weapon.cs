@@ -29,7 +29,7 @@ namespace RPG.Combat
 
         public void SpawnProjectile(Transform righthand, Transform lefthand, Health target){
             Projectiles spawnedProjectile = Instantiate(projectile, GetTransform(righthand, lefthand).position, Quaternion.identity);
-            spawnedProjectile.SetTarget(target);
+            spawnedProjectile.SetTarget(target, WeaponDamage);
 
         }
 

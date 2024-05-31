@@ -18,3 +18,4 @@ MonoBehaviour:
   WeaponDamage: 1000
   WeaponRange: 2
   isRightHand: 1
+  projectile: {fileID: 0}
