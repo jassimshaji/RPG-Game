@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blue Arrow projectile Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 164313791265768668, guid: d9cc845af1b48d84ba2a4e7a026c0f0f,
+        type: 3}
+      propertyPath: projectileSpeed
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8733842607854025673, guid: d9cc845af1b48d84ba2a4e7a026c0f0f,
         type: 3}
       propertyPath: m_LocalPosition.x

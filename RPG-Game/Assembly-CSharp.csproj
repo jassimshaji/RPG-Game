@@ -78,6 +78,7 @@
      <Compile Include="Assets\Scripts\Scenemanagement\SavingWrapper.cs" />
      <None Include="Assets\Asset Packs\Animations\README - Usage Rights for these assets 1.txt" />
      <None Include="Assets\Asset Packs\Synty - Polygon Student Sample\README - Usage Rights for these assets.txt" />
+     <None Include="Assets\SimpleFX\Materials\UnlitVertexColour_Alpha.shader" />
      <None Include="Assets\Asset Packs\BOXOPHOBIC\Skybox Cubemap Extended\Shaders\Skybox Cubemap Extended.shader" />
  <Reference Include="Cinemachine">
  <HintPath>C:/Users/JARVIS/Desktop/MyGames/RPG-Game/RPG-Game/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
