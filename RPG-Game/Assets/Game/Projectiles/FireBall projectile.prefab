@@ -49,6 +49,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileSpeed: 20
   isHoming: 1
+  impactOfProjectile: {fileID: 2302457091093092515, guid: 69d1b1037536b504884c93bb73d662db,
+    type: 3}
 --- !u!65 &144088326130782176
 BoxCollider:
   m_ObjectHideFlags: 0
